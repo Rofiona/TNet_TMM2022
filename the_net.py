@@ -213,8 +213,7 @@ class Baseline(nn.Module):
         alpha=self.flatten(alpha)
         alpha=self.fc(alpha)
         alpha=self.sigmoid(alpha)
-        #RGB
-        #conv1
+
         tt=x
         x = self.resnet.conv1(x)
         x = self.resnet.bn1(x)
